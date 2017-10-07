@@ -1,0 +1,25 @@
+
+.kbs-signature{
+  display: inline-block;
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  margin-left: -30vw;
+  margin-top: -10vh;
+}
+
+.kbs-signature img{
+  width: 50vw;
+}
+
+.kbs-sketch{
+  float: right;
+  display: inline-block;
+  position: absolute;
+  right: 10vw;
+  bottom: 5vh;
+}
+
+.kbs-sketch img{
+  height: 80vh;
+}
