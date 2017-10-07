@@ -1,25 +1,50 @@
 
+@import url('https://fonts.googleapis.com/css?family=Kalam');
+
 .kbs-signature{
   display: inline-block;
   position: absolute;
-  top: 50vh;
-  left: 50vw;
-  margin-left: -30vw;
-  margin-top: -10vh;
+  top: 40vh;
+  left: 40vw;
+  margin-left: -20vw;
+  margin-top: -20vh;
 }
 
 .kbs-signature img{
-  width: 50vw;
+  width: 40vh;
 }
 
 .kbs-sketch{
   float: right;
   display: inline-block;
   position: absolute;
-  right: 10vw;
-  bottom: 5vh;
+  left: 60vw;
+  top: 10vh;
 }
 
 .kbs-sketch img{
-  height: 80vh;
+  height: 70vh;
+}
+
+.nav-menu{
+  font-family: 'Kalam', cursive;
+  position: absolute;
+  left: 20vw;
+  margin-left: -5px;
+//  width: 5vw;
+  font-size: 18px;
+}
+
+.nav-menu a{
+  text-decoration: none;
+}
+
+.kbs-content{
+  position: absolute;
+  display: inline-block;
+  top: 40vh;
+  left: 20vw;
+  width: 40vw;
+  font-family: 'Kalam', cursive;
+  font-size: 18px;
 }
