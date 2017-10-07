@@ -1,1 +1,7 @@
-{{outlet}}
+{{#each model.data as |project|}}
+  {{project.id}}
+  {{project.attributes.image}}
+
+{{/each}}
+
+{{yield}}
