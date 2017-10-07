@@ -4,14 +4,12 @@
 .kbs-signature{
   display: inline-block;
   position: absolute;
-  top: 40vh;
-  left: 40vw;
-  margin-left: -20vw;
-  margin-top: -20vh;
+  top: 10vh;
+  left: 20vw;
 }
 
 .kbs-signature img{
-  width: 40vh;
+  width: 40vw;
 }
 
 .kbs-sketch{
@@ -19,32 +17,83 @@
   display: inline-block;
   position: absolute;
   left: 60vw;
-  top: 10vh;
+  top: 5vh;
 }
 
 .kbs-sketch img{
   height: 70vh;
 }
 
-.nav-menu{
+
+@media only screen and (max-width: 480px){
+  .kbs-signature{
+    top: 20vh;
+    left: 0vw;
+  }
+
+  .kbs-signature img{
+    width: 65vw;
+  }
+}
+
+@media only screen and (max-width: 480px){
+  .kbs-sketch{
+    left: auto;
+    right: 0vw;
+    top: 5vh;
+  }
+
+  .kbs-sketch img{
+    height: 50vh;
+  }
+}
+
+/* .nav-menu{
   font-family: 'Kalam', cursive;
   position: absolute;
-  left: 20vw;
+  left: 60vw;
+  top: 70vh;
   margin-left: -5px;
-//  width: 5vw;
-  font-size: 18px;
+  font-size: 30px;
 }
 
 .nav-menu a{
   text-decoration: none;
+  color: black;
+  padding: 0.5vw;
+  display: block;
+  height: 5vh;
+}
+*/
+
+.nav-menu{
+  position: fixed;
+  bottom: 5vh;
+  left: 60vw;
+  font-family: 'Kalam', cursive;
+}
+
+.nav-menu a{
+  text-decoration: none;
+  color: black;
+  display: block;
+  font-size: 18px;
+  height: 3vh;
 }
 
 .kbs-content{
   position: absolute;
   display: inline-block;
-  top: 40vh;
+  top: 35vh;
   left: 20vw;
   width: 40vw;
   font-family: 'Kalam', cursive;
   font-size: 18px;
+}
+@media only screen and (max-width: 480px){
+  .kbs-content{
+    top: 35vh;
+    left: 5vw;
+    width: 60vw;
+  }
 }
