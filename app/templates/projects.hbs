@@ -1,7 +1,8 @@
-{{#each model.data as |project|}}
-  {{project.id}}
-  {{project.attributes.image}}
-
-{{/each}}
-
+<div class="kbs-projects">
+  <ul>
+    {{#each model.data as |project|}}
+      <li> {{kbs-project project=project}} </li>
+    {{/each}}
+  </ul>
+</div>
 {{yield}}

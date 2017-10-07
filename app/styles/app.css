@@ -125,3 +125,14 @@
     width: 70vw;
   }
 }
+
+
+.kbs-projects ul{
+  margin: 0 auto;
+  text-align: center;
+}
+
+.kbs-projects li{
+  display: inline-block;
+  vertical-align: top;
+}
