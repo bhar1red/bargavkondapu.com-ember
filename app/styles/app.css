@@ -23,16 +23,16 @@
   }
 }
 
-@media only screen and (max-height: 640px){
+/*@media only screen and (max-height: 640px){
   .kbs-signature{
     top: 20vh;
     left: 0vw;
   }
 
   .kbs-signature img{
-    width: 35vh;
+    width: 40vh;
   }
-}
+} */
 
 .kbs-sketch{
   float: right;
