@@ -12,6 +12,28 @@
   width: 40vw;
 }
 
+@media only screen and (max-width: 480px){
+  .kbs-signature{
+    top: 20vh;
+    left: 0vw;
+  }
+
+  .kbs-signature img{
+    width: 65vw;
+  }
+}
+
+@media only screen and (max-height: 640px){
+  .kbs-signature{
+    top: 20vh;
+    left: 0vw;
+  }
+
+  .kbs-signature img{
+    width: 35vh;
+  }
+}
+
 .kbs-sketch{
   float: right;
   display: inline-block;
@@ -22,18 +44,6 @@
 
 .kbs-sketch img{
   height: 70vh;
-}
-
-
-@media only screen and (max-width: 480px){
-  .kbs-signature{
-    top: 20vh;
-    left: 0vw;
-  }
-
-  .kbs-signature img{
-    width: 65vw;
-  }
 }
 
 @media only screen and (max-width: 480px){
@@ -48,23 +58,18 @@
   }
 }
 
-/* .nav-menu{
-  font-family: 'Kalam', cursive;
-  position: absolute;
-  left: 60vw;
-  top: 70vh;
-  margin-left: -5px;
-  font-size: 30px;
+@media only screen and (max-height: 640px){
+  .kbs-sketch{
+    left: auto;
+    right: 10vw;
+    top: 5vh;
+  }
+
+  .kbs-sketch img{
+    height: 50vh;
+  }
 }
 
-.nav-menu a{
-  text-decoration: none;
-  color: black;
-  padding: 0.5vw;
-  display: block;
-  height: 5vh;
-}
-*/
 
 .nav-menu{
   position: fixed;
@@ -78,7 +83,23 @@
   color: black;
   display: block;
   font-size: 18px;
-  height: 3vh;
+}
+
+@media only screen and (max-height: 640px){
+  .nav-menu{
+    position: fixed;
+    bottom: 5vh;
+    left: auto;
+    right: 10vw;
+    font-family: 'Kalam', cursive;
+  }
+
+  .nav-menu a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    font-size: 18px;
+  }
 }
 
 .kbs-content{
@@ -95,5 +116,12 @@
     top: 35vh;
     left: 5vw;
     width: 60vw;
+  }
+}
+@media only screen and (max-height: 640px){
+  .kbs-content{
+    top: 35vh;
+    left: 5vw;
+    width: 70vw;
   }
 }
