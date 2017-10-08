@@ -1,7 +1,9 @@
 <div class="kbs-projects">
   <ul>
     {{#each model.data as |project|}}
-      <li> {{kbs-project project=project}} </li>
+    {{#link-to 'project' project.id}}
+        <li> {{kbs-project project=project}} </li>
+    {{/link-to}}
     {{/each}}
   </ul>
 </div>
