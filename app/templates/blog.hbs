@@ -1,1 +1,10 @@
-{{outlet}}
+<div class="kbs-blog-posts">
+  <p> this is blog post </p>
+  <ul>
+    {{#each model.data as |blog-post|}}
+    {{#link-to 'blog-post' blog-post.slug}}
+        <li> {{kbs-blog-post post=blog-post}} </li>
+    {{/link-to}}
+    {{/each}}
+  </ul>
+</div>

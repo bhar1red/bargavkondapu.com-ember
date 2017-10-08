@@ -11,6 +11,7 @@ Router.map(function() {
   this.route('projects');
   this.route('project', {path: '/project/:slug'});
   this.route('blog');
+  this.route('blog-post', {path: '/blog/:slug'});
 });
 
 export default Router;
