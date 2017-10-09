@@ -1,6 +1,6 @@
 <div class="kbs-projects">
   <ul>
-    {{#each model.data as |project|}}
+    {{#each model as |project|}}
     {{#link-to 'project' project.slug}}
         <li> {{kbs-project project=project}} </li>
     {{/link-to}}
