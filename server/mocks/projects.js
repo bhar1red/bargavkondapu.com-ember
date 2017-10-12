@@ -1,19 +1,36 @@
 /* eslint-env node */
 'use strict';
 
+var projects = [{ id:'1', title:'Drupal Migrate Taxonomy To Groups', slug:'drupal-migrate-taxonomy-to-groups', weight:'', category:"module", attributes: {image:"project1.jpg", description:"project 1 description", url:""}},
+  { id:'2', title:'Haveli Bistro', slug:'haveli-bistro', weight:'', category:"website", attributes: {image:"project2.jpg", description:"project 2 description", url:"www.havelibistro.com"}},
+  { id:'3', title:'American Institute Of Architects', slug:'american-institute-of-architects', weight:'', category:"website", attributes: {image:"project2.jpg", description:"project 2 description", url:"www.havelibistro.com"}},
+  { id:'4', title:'Haveli Bistro', slug:'Haveli Bistro', weight:'', category:"website", attributes: {image:"project2.jpg", description:"project 2 description", url:"www.havelibistro.com"}},
+  { id:'5', title:'Haveli Bistro', slug:'Haveli Bistro', weight:'', category:"website", attributes: {image:"project2.jpg", description:"project 2 description", url:"www.havelibistro.com"}},
+  { id:'6', title:'Haveli Bistro', slug:'Haveli Bistro', weight:'', category:"website", attributes: {image:"project2.jpg", description:"project 2 description", url:"www.havelibistro.com"}}];
+
 module.exports = function(app) {
   const express = require('express');
   let projectsRouter = express.Router();
 
   projectsRouter.get('/', function(req, res) {
-    res.send({
-      'projects': [{ id:'1', title:'Drupal Migrate Taxonomy To Groups', slug:'drupal-migrate-taxonomy-to-groups', weight:'', category:"module", attributes: {image:"project1.jpg", description:"project 1 description", url:""}},
-        { id:'2', title:'Haveli Bistro', slug:'haveli-bistro', weight:'', category:"website", attributes: {image:"project2.jpg", description:"project 2 description", url:"www.havelibistro.com"}},
-        { id:'3', title:'American Institute Of Architects', slug:'american-institute-of-architects', weight:'', category:"website", attributes: {image:"project2.jpg", description:"project 2 description", url:"www.havelibistro.com"}},
-        { id:'4', title:'Haveli Bistro', slug:'Haveli Bistro', weight:'', category:"website", attributes: {image:"project2.jpg", description:"project 2 description", url:"www.havelibistro.com"}},
-        { id:'5', title:'Haveli Bistro', slug:'Haveli Bistro', weight:'', category:"website", attributes: {image:"project2.jpg", description:"project 2 description", url:"www.havelibistro.com"}},
-        { id:'6', title:'Haveli Bistro', slug:'Haveli Bistro', weight:'', category:"website", attributes: {image:"project2.jpg", description:"project 2 description", url:"www.havelibistro.com"}}]
-    });
+   console.log(req.query.slug);
+    if(req.query.slug != null){
+      var it = [];
+      projects.forEach(function(project){
+        if(project.slug == req.query.slug){
+          it = project;
+        }
+      });
+      res.send({
+        'projects': it
+      });
+    }
+    else{
+      res.send({
+        'projects': projects
+      });
+
+    }
   });
 
   projectsRouter.post('/', function(req, res) {
@@ -21,10 +38,10 @@ module.exports = function(app) {
   });
 
   projectsRouter.get('/:id', function(req, res) {
+
     res.send({
-      'projects': {
-        id: req.params.id
-      }
+      'projects': it
+
     });
   });
 
