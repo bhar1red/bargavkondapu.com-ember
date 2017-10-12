@@ -13,7 +13,6 @@ module.exports = function(app) {
   let projectsRouter = express.Router();
 
   projectsRouter.get('/', function(req, res) {
-   console.log(req.query.slug);
     if(req.query.slug != null){
       var it = [];
       projects.forEach(function(project){
