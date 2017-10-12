@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model(){
-    return {
-    };
+    var posts = this.store.findAll('post', {reload: true}).then(posts => posts.sortBy('id'));
+    return posts;
   }
 });

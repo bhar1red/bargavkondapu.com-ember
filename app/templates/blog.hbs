@@ -1,7 +1,6 @@
-<div class="kbs-blog-posts">
-  <p> this is blog post </p>
+<div class="kbs-blog-posts">  
   <ul>
-    {{#each model.data as |blog-post|}}
+    {{#each model as |blog-post|}}
     {{#link-to 'blog-post' blog-post.slug}}
         <li> {{kbs-blog-post post=blog-post}} </li>
     {{/link-to}}
