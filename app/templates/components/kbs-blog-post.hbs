@@ -1,5 +1,9 @@
-<div class="kbs-blog-post">
-  {{post.id}}
-  {{post.title}} <br/>
-  {{post.attributes.description}}
+<div class="kbs-blog-post-component">
+  <img src={{post.attributes.image.src}} alt={{post.attributes.image.alt}}>
+  <h3>{{post.title}}</h3>
+  <p>{{#if post.attributes.description.summary}}
+    {{{post.attributes.description.summary}}}
+  {{else}}
+    {{{post.attributes.description.full}}}
+  {{/if}} </p>
 </div>

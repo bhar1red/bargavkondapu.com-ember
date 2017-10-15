@@ -2,4 +2,14 @@
 {{#link-to 'blog'}}
   <p> return to all posts </p>
 {{/link-to}}
-{{model.title}}
+
+<div class="kbs-blog-post-content">
+<h3> {{model.title}} </h3>
+
+<img src={{model.attributes.image.src}} alt={{model.attributes.image.alt}}>
+
+
+{{{model.attributes.description.full}}}
+
+
+</div>

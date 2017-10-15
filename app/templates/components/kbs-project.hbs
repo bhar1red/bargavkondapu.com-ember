@@ -1,5 +1,9 @@
-<div class="kbs-project">
-  {{project.id}}
-  {{project.title}} <br/>
-  {{project.attributes.description}}
+<div class="kbs-project-component">
+  <img src={{project.attributes.image.src}} alt={{project.attributes.image.alt}}>
+  <h3>{{project.title}}</h3>
+  <p>{{#if project.attributes.description.summary}}
+    {{{project.attributes.description.summary}}}
+  {{else}}
+    {{{project.attributes.description.full}}}
+  {{/if}} </p>
 </div>
