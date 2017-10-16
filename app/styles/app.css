@@ -190,16 +190,16 @@
 .kbs-project-content img{
   width: 20vw;
   float: left;
+  margin-right: 10px;
 }
 
 .kbs-project-content p{
-  display: inline-block;
 }
 
 .kbs-blog-post-content img{
   width: 20vw;
   float: left;
+  margin-right: 10px;
 }
 .kbs-blog-post-content p{
-  display: inline-block;
 }
