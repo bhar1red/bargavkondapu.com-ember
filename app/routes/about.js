@@ -18,7 +18,7 @@ export default Ember.Route.extend({
     + "<h3> Technical </h3>"
     + "<p> For more than 6 years, I have been building highly scalable and robust websites."
     + " My work has been mostly on writing API's and developing custom modules for Drupal. Though PHP is my preferred programming language, I believe in programming concepts and principles more than the language itself."
-    + " I love learning about all the aspects involved with developing a websites and hence, familiar with frontend, configuring servers, writing build scripts."
+    + " I love learning about all the aspects involved with developing websites, good with frontend, configuring servers and writing build scripts as well."
     + " My Master's in Information Security made me realize that majority of security vulnerabilities can be prevented by simple secure coding practices and so, most of my work adhere to secure coding practices. </p>"
     + "<a href='/BargavKondapu_Resume.pdf'> Click here </a> for my Resume";
 
