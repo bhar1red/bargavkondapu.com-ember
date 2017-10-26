@@ -203,3 +203,7 @@
 }
 .kbs-blog-post-content p{
 }
+
+.kbs-blog-post-content .block{
+  display: inline-block;
+}
